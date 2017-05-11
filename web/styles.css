@@ -1,0 +1,46 @@
+body {
+    background-color: #13314E;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+h1 {
+    text-align: center;
+}
+a{
+    color: white;
+}
+
+
+td {
+    border: 1px solid white;
+}
+
+#MovieTable{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    overflow: auto;
+}
+#MovieTable input{
+    position: relative;
+    width: 98%;
+}
+.wrongInput{
+    background-color: red;
+}
+
+#sortButtons{
+    cursor: pointer;
+}
+
+tr:nth-child(even){
+    background-color: #368ADB;
+}
+
+td a{color:red;}
+td a:link {text-decoration:none;}
+td a:visited {text-decoration:none;}
+td a:hover {text-decoration:underline;}
+td a:active {text-decoration:underline;}

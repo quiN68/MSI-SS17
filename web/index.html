@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2017, Alex. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Moviedatabase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+</head>
+
+<body>
+<h1><b>Moviedatabase</b></h1>
+<form name="formMovTable">
+    <table id="MovieTable">
+        <thead>
+        <tr id="sortButtons">
+            <th><a  id="sortTitle" name="title">Title</a></th>
+            <th><a  id="sortDirector" name="director">Director</a></th>
+            <th><a  id="sortYear" name="year">Year</a></th>
+            <th><a  id="sortRuntime" name="runtime">Runtime</a></th>
+            <th><a  id="sortfsk" name="fsk">FSK</a></th>
+        </tr>
+        <tr id="inputFields">
+            <td><input id="title" type="text"></td>
+            <td><input id="director" type="text" ></td>
+            <td><input id="year" type="text" ></td>
+            <td><input id="runtime" type="text" ></td>
+            <td><input id="fsk" type="text" ></td>
+        </tr>
+        </thead>
+    </table>
+</form>
+</body>
+</html>
+
