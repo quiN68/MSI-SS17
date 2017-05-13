@@ -90,11 +90,19 @@ class Movie{
 void handleKeyEvent(KeyboardEvent event) {
   KeyEvent keyEvent = new KeyEvent.wrap(event);
   if (keyEvent.keyCode == KeyCode.ENTER) {
-    String title=(querySelector('#title')as InputElement).value;
-    String director=(querySelector('#director')as InputElement).value;
-    String year=(querySelector('#year')as InputElement).value;
-    String runtime=(querySelector('#runtime')as InputElement).value;
-    String fsk=(querySelector('#fsk')as InputElement).value;
+    String title=(querySelector('#title')as TextInputElement).value;
+    String director=(querySelector('#director')as TextInputElement).value;
+    String year=(querySelector('#year')as TextInputElement).value;
+    String runtime=(querySelector('#runtime')as TextInputElement).value;
+    String fsk=(querySelector('#fsk')as TextInputElement).value;
     addMovieToTable(new Movie(title,director,year,runtime,fsk));
+    clearInput();
   }
+}
+
+void clearInput() {
+  for(TextInputElement inputField in querySelectorAll('input')){
+    inputField.value="";
+  }
+
 }
